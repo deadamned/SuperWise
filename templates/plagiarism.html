@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/st7.css') }}">
+   <!--  <link rel="stylesheet" href="st5.css">-->
+</head>
+  <body>
+        <div id="nav">
+                <ul>
+                    <li> <a href="{{ url_for('home') }}">HOME</a><li>
+                    <li> <a class="active" href="{{ url_for('plagiarism') }}">CHECK FOR PLAGIARISM</a></li>
+                    <li> <a href="{{ url_for('correct') }}">CORRECT MISTAKES</a></li>
+                    <li> <a href="#About">ABOUT</a><li>
+                    <li> <a href="#Contact">CONTACT</a><li>
+                </ul>
+            </div>
+            <hr/>
+
+        <div id="frame">
+            <div id="sel">
+                <label>Proszę wybrać przedmiot</label>
+                <br>
+            <select>
+                <option value="polski" selected>Polski</option>
+            </select>
+            </div>
+            <br>
+            <br>
+            <div id="sel2">
+            <label>Proszę wybrać temat</label>
+            <form action="/login" method="POST">
+            <select id="select" name="cat">
+                <option value=""></option>
+                <optgroup label="Romantyzm">
+                <option value="tadeusz" disabled>Pan Tadeusz - streszczenie</option>
+                <option value="tadeusz2" >Pan Tadeusz - epopeja narodowa</option>
+                <option value="tadeusz3" disabled>Pan Tadeusz - charakterystyka postaci</option>
+                <option value="lilije" disabled>Lilije - streszczenie/opracowanie</option>
+                <option value="swit" disabled>Świtezianka - streszczenie/opracowanie</option>
+                <option value="dziady2" disabled>Dziady II - streszczenie/opracowanie</option>
+                <option value="dziady21" disabled>Dziady II - charakterystyka postaci</option>
+                <option value="dziady3" disabled>Dziady III - charakterystyka postaci</option>
+                <option value="dziady31" disabled>Dziady III - streszczenie/opracowanie</option>
+                <option value="dziady32" disabled>Dziady III - wielka improwizacja</option>
+                <option value="dziady4" disabled>Dziady IV - charakterystyka Gustawa</option>
+                <option value="kordian" disabled>Kordian - streszczenie/opracowanie</option>
+                <option value="kordian2" disabled>Kordian - charakterystyka</option>
+              </select>
+              <br>
+              <br>
+            </div>
+            <div id="submit">
+            <label>Proszę podać plik (wraz z .txt) do porównania</label>
+            <br>
+            <div id="text">
+            <input type="text" name="text2">
+            </div>
+            <br>
+            <br>
+            </div>
+            <div id="button">
+            <input type="submit" name="plagiarism" value="PORÓWNAJ">
+            </div>
+            </form>
+        </div>
+  </body>
+</html>

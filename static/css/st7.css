@@ -1,0 +1,123 @@
+body {
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	margin: 0 !important;
+    padding: 0 !important;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#nav {
+	background-color: white;
+	height: 45px;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav ul {
+	padding: 20px;
+	margin: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+#nav li {
+	display: inline;
+	padding: 30px;
+	vertical-align: middle;
+}
+
+#nav a {
+	text-decoration: none;
+	padding: 25px 25px 25px 25px;
+	color: black;
+	vertical-align: middle;
+}
+
+#nav a:hover {
+	color: white;
+	background-color: black;
+}
+
+#nav .active {
+	color: white;
+	background-color: black;
+}
+
+#sel {
+	font-family: Arial, Helvetica, sans-serif;
+	width: 800px;
+	margin-top: 30%;
+	margin-left: 10%;
+	margin-right: 10%;
+	
+}
+
+#sel2 {
+	font-family: Arial, Helvetica, sans-serif;
+	width: 800px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#submit {
+	font-family: Arial, Helvetica, sans-serif;
+	width: 800px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+select {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	width: 400px;
+
+}
+
+#text input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	width:395px;
+}
+
+#button input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-align: center;
+	margin-left:32%;
+	margin-right: 30%;
+	padding: 8px 50px 8px 50px;
+	background-color: white;
+    color: black;
+		border: 2px solid black;
+		transition-duration: 0.4s;
+}
+
+#button input:hover {
+	background-color: #4CAF50; /* Green */
+	color: white;
+}
+
+
+
+#frame{
+	border-width:2px;
+	border-style: solid;
+	border-color:black;
+	width: 500px;
+	height: 600px;
+	margin-top: 3%;
+	margin-right: 35%;
+	margin-left: 35%;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
